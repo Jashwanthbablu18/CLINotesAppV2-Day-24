@@ -1,0 +1,27 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+1. Constant
+   - NOTES_FILE: The name of the file where our notes will store.
+
+2. Functions
+   - show_menu(): Displays the menu options for the user.
+   - add_note(): Asks the user to enter a note and appends it to the notes.txt file. It handles any exceptions that might occur 
+     during file operations.
+   - view_notes(): This function reads all notes from the file and displays them. If the file doesn't exist, it catches the FileNotFoundError.
+   - update_note(): This function allows the user to update a specific note based on its index number. It reads all notes, displays them, and asks for the 
+     index number of the note to update. It then overwrites the note with updated content.
+   - delete_note(): Similar to update_note(), but it deletes a selected note instead of updating it.
+   - show_cursor_position(): Opens the file in read mode and prints the current cursor position in bytes using tell(). If the file 
+     doesn't exist, it catches the FileNotFoundError.
+   - read_from_position(): Asks the user for a byte position and uses seek() to move the cursor to that position in the file, then 
+     reads and displays the content from that point onwards. It handles various exceptions such as invalid input or file not found.
+
+3. main()
+   - The main() function displays the menu and processes user input in a while loop until the user chooses to exit (option 7). Each choice 
+     corresponds to a function that performs the desired operation.
+
+
+What I've learnt:
+  - seek(position): Moves the cursor to a specified byte position in the file.
+  - tell(): Returns the current byte position of the cursor in the file.
+
